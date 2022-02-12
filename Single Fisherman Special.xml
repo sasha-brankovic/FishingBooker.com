@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="FishingBooker">
+    <parameter name="BROWSER" value="Chrome"/>
+    <parameter name="BROWSER_VERSION" value="98"/>
+    <parameter name="WAIT_TIME_IMPLICIT" value="30"/>
+    <parameter name="WAIT_TIME_EXPLICIT" value="45"/>
+    <parameter name="URL" value="qahiring.dev.fishingbooker.com/charters/view/22879"/>
+    <parameter name="USERNAME" value="fishingbooker"/>
+    <parameter name="PASSWORD" value="QAFBTest"/>
+
+    <test name="Single Fisherman Special">
+        <classes>
+            <class name="runners.GeneralRunner"/>
+        </classes>
+    </test>
+</suite>
